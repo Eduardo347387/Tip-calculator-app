@@ -9,30 +9,60 @@
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
+  <main class="conteiner">
+    <div class="box-Img">
+      	<img class="image" src=".//images/logo.svg" alt="S P L I T T E R">
+    </div>
 
-  Bill
+    <div class="card-Calculator">
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+		<div class="seccion-Data-Input">
+			<div class="conteiner-Input">
+				<div class="conteiner-Input-Text">
+						<label class="title" for="">Bill</label>
+				</div>
+				<div class="conteiner-Input-Box">
+						<img class="image" src="./images/icon-dollar.svg" alt="D O L L A R">
+						<input type="text" placeholder="N U M B E R" value="0" id="bill">
+				</div>
+			</div>
 
-  Number of People
+			<section class="conteiner-Select-Tip">
+				<h1 class="title">Select Tip %</h1>
+				<div class="conteiner-tip">
+					<button class="button-tip" value="5">5%</button>
+					<button class="button-tip" value="10">10%</button>
+					<button class="button-tip" value="15">15%</button>
+					<button class="button-tip" value="25">25%</button>
+					<button class="button-tip" value="50">50%</button>
+					<input type="text" value="Custom" id="Custom">
+				</div>
+			</section>
 
-  Tip Amount
-  / person
+			<div class="conteiner-Input">
+			<div class="conteiner-Input-Text">
+					<label class="title" for="">Number of People</label>
+			</div>
+			<div class="conteiner-Input-Box">
+					<img class="image" src="./images/icon-person.svg" alt="P E R S O N">
+					<input type="text" placeholder="N U M B E R" id="person" value="0">
+			</div>
+			</div>
+		</div>
 
-  Total
-  / person
+		<div class="Seccion-Calculator">
+			<div class="container-Result">
+				<p class="title-Resul">Tip-Amount <span>/ person</span></p>
+				<p id="tip">$0</p>
+			</div>
+			<div class="container-Result">
+				<p class="title-Resul">Total <span>/ person</span></p>
+				<p id="tip">$0</p>
+			</div>
 
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+			<Button type="submit">RESET</Button>
+		</div>	
+    </div>
+  </main>
 </body>
 </html>
