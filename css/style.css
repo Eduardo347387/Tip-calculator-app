@@ -195,14 +195,14 @@ body {
 }
 @media (min-width: 775px) {
   .conteiner .card-Calculator {
-    max-width: 79rem;
+    max-width: 73.4rem;
     box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.2);
-    -moz-column-gap: 3.5rem;
-         column-gap: 3.5rem;
+    -moz-column-gap: 3.3rem;
+         column-gap: 3.3rem;
   }
   .conteiner .card-Calculator .seccion-Data-Input {
     padding-right: 1rem;
-    width: 53%;
+    width: 50%;
   }
   .conteiner .card-Calculator .seccion-Data-Input .conteiner-Input-Text .title {
     font-size: 1.5rem;
@@ -210,12 +210,15 @@ body {
   }
   .conteiner .card-Calculator .seccion-Data-Input .conteiner-Select-Tip .conteiner-tip {
     grid-template-columns: repeat(3, 1fr);
+    -moz-column-gap: 1.2rem;
+         column-gap: 1.2rem;
+    row-gap: 1.4rem;
   }
   .conteiner .card-Calculator .seccion-Data-Input .conteiner-Select-Tip .conteiner-tip .button-tip, .conteiner .card-Calculator .seccion-Data-Input .conteiner-Select-Tip .conteiner-tip #Custom {
     width: 10.2rem;
   }
   .conteiner .card-Calculator .Seccion-Calculator {
-    width: 47%;
+    width: 49%;
   }
   .conteiner .card-Calculator .Seccion-Calculator .container-Result #tip {
     font-size: 3.2rem;

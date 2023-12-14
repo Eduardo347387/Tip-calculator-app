@@ -210,12 +210,13 @@ body{
 @media(min-width:775px){
     .conteiner{
         .card-Calculator{
-            max-width: 79rem;
+            max-width: 73.4rem;
             box-shadow: 0 1rem 5rem rgb(0,0,0,0.2);
-            column-gap: 3.5rem;
+            column-gap: 3.3rem;
             .seccion-Data-Input{
                 padding-right: 1rem;
-                width: 53%;
+                width: 50%;
+                
                 .conteiner-Input{
                     &-Text .title{
                         font-size: 1.5rem;
@@ -224,6 +225,8 @@ body{
                 }
                 .conteiner-Select-Tip .conteiner-tip{
                     grid-template-columns: repeat(3,1fr);
+                    column-gap: 1.2rem;
+                    row-gap: 1.4rem;
                     .button-tip, #Custom{
                         width: 10.2rem;
 
@@ -231,7 +234,7 @@ body{
                 }
             }
             .Seccion-Calculator{
-                width: 47%;
+                width: 49%;
                 .container-Result #tip{
                     font-size: 3.2rem;
                 }
