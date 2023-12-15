@@ -29,12 +29,6 @@ body {
   flex: 1;
 }
 
-.error {
-  color: hsl(0, 81%, 55%);
-  font-weight: 700;
-  font-size: 1.3rem;
-}
-
 .conteiner-Input-Text {
   display: flex;
 }
@@ -57,6 +51,17 @@ body {
 }
 .input-style:focus {
   outline: none;
+}
+
+.error {
+  color: hsl(0, 81%, 55%);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.errorInput {
+  border: 1px solid;
+  border-color: red;
 }
 
 .conteiner {
@@ -95,6 +100,10 @@ body {
   font-family: "Space Mono", monospace;
   min-width: 7rem;
   max-width: 20rem;
+  opacity: 0.8;
+}
+.conteiner .card-Calculator .seccion-Data-Input .conteiner-Select-Tip .conteiner-tip .active {
+  opacity: 1;
 }
 .conteiner .card-Calculator .seccion-Data-Input .conteiner-Select-Tip .conteiner-tip .button-tip {
   height: 4rem;
@@ -136,11 +145,11 @@ body {
   display: block;
   color: var(--Grayish_cyan);
 }
-.conteiner .card-Calculator .Seccion-Calculator .container-Result #tip {
+.conteiner .card-Calculator .Seccion-Calculator .container-Result .tip {
   color: #2ebaa7;
   font-size: 2.2rem;
 }
-.conteiner .card-Calculator .Seccion-Calculator button[type=submit] {
+.conteiner .card-Calculator .Seccion-Calculator button[type=reset] {
   margin-top: 0.5rem;
   background-color: #26c2ad;
   border: none;
@@ -189,7 +198,7 @@ body {
   .conteiner .card-Calculator .Seccion-Calculator .container-Result .title-Resul {
     font-size: 1.5rem;
   }
-  .conteiner .card-Calculator .Seccion-Calculator button[type=submit] {
+  .conteiner .card-Calculator .Seccion-Calculator button[type=reset] {
     margin-top: 18rem;
   }
 }
@@ -220,7 +229,7 @@ body {
   .conteiner .card-Calculator .Seccion-Calculator {
     width: 49%;
   }
-  .conteiner .card-Calculator .Seccion-Calculator .container-Result #tip {
+  .conteiner .card-Calculator .Seccion-Calculator .container-Result .tip {
     font-size: 3.2rem;
   }
   .conteiner .card-Calculator .Seccion-Calculator button[type=submit] {

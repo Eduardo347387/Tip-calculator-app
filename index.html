@@ -27,18 +27,18 @@
 			<section class="conteiner-Select-Tip">
 				<h1 class="title">Select Tip %</h1>
 				<div class="conteiner-tip">
-					<button class="button-tip" value="5">5%</button>
-					<button class="button-tip" value="10">10%</button>
-					<button class="button-tip" value="15">15%</button>
-					<button class="button-tip" value="25">25%</button>
-					<button class="button-tip" value="50">50%</button>
-					<input class="input-style" type="text" placeholder="Custom" id="Custom">
+					<button class="button-tip" value="5"  disabled>5%</button>
+					<button class="button-tip" value="10" disabled>10%</button>
+					<button class="button-tip" value="15" disabled>15%</button>
+					<button class="button-tip" value="25" disabled>25%</button>
+					<button class="button-tip" value="50" disabled>50%</button>
+					<input class="input-style" type="text" placeholder="Custom" id="Custom" disabled>
 				</div>
 			</section>
 
 			<div class="conteiner-Input">
 				<div class="conteiner-Input-Text">
-						<label class="title" for="">Number of People</label>
+					<label class="title" for="">Number of People</label>
 				</div>
 				<input class="input-style" type="text" id="person">	
 			</div>
@@ -47,16 +47,17 @@
 		<div class="Seccion-Calculator">
 			<div class="container-Result">
 				<p class="title-Resul">Tip-Amount <span>/ person</span></p>
-				<p id="tip">$0</p>
+				<p class="tip" id="tip">$0</p>
 			</div>
 			<div class="container-Result">
 				<p class="title-Resul">Total <span>/ person</span></p>
-				<p id="tip">$0</p>
+				<p class="tip" id="total">$0</p>
 			</div>
 
-			<Button type="submit">RESET</Button>
+			<Button type="reset">RESET</Button>
 		</div>	
     </div>
   </main>
+  <script src="./js/app.js" type="module"></script>
 </body>
 </html>

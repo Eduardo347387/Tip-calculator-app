@@ -30,13 +30,6 @@ body{
     flex: 1;
 }
 
-.error{
-    color: hsl(0, 81%, 55%);
-    font-weight: 700;
-    font-size: 1.3rem; 
-
-}
-
 .conteiner-Input-Text{
     display: flex;
 }
@@ -59,6 +52,18 @@ body{
     &:focus{
         outline: none;
     }
+}
+
+.error{
+    color: hsl(0, 81%, 55%);
+    font-weight: 700;
+    font-size: 1.3rem; 
+
+}
+
+.errorInput{
+    border: 1px solid;
+    border-color: red;
 }
 
 .conteiner{
@@ -97,6 +102,10 @@ body{
                     font-family: 'Space Mono', monospace;
                     min-width: 7rem;
                     max-width: 20rem;
+                    opacity: 0.8;
+                }
+                .active{
+                    opacity: 1;
                 }
                 .button-tip{
                     height: 4rem;
@@ -114,6 +123,7 @@ body{
                     padding: 0;
                     color: var(--Very_dark_cyan);
                     letter-spacing: 0.1rem;
+
                 }     
             }
             .conteiner-Input .input-style{
@@ -139,12 +149,12 @@ body{
                         color: var(--Grayish_cyan);
                     }
                 }
-                #tip{
+                .tip{
                     color: #2ebaa7;
                     font-size:2.2rem;
                 }
             }
-            button[type="submit"]{
+            button[type="reset"]{
                 margin-top: .5rem;
                 background-color: #26c2ad;
                 border: none;
@@ -198,7 +208,7 @@ body{
                     }
                 }
                
-                button[type="submit"]{
+                button[type="reset"]{
                     margin-top: 18rem;                                      
 
                 }
@@ -229,13 +239,12 @@ body{
                     row-gap: 1.4rem;
                     .button-tip, #Custom{
                         width: 10.2rem;
-
                     }
                 }
             }
             .Seccion-Calculator{
                 width: 49%;
-                .container-Result #tip{
+                .container-Result .tip{
                     font-size: 3.2rem;
                 }
                 button[type="submit"]{
