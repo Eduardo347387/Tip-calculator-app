@@ -1,5 +1,5 @@
-import { bill,buttons,custom,numPerson,tipAmount,total,reset } from "../selectores.js";
-import { validateInputData,unlockInputButtons } from "../funciones.js";
+import { bill,numPerson,reset,form } from "../selectores.js";
+import { validateInputData,ui} from "../funciones.js";
 
 
 class App{
@@ -9,6 +9,8 @@ class App{
 
     initApp(){  
         // custom.addEventListener('input',)
+        window.addEventListener('beforeunload',()=>{form.reset();});
+        reset.addEventListener('click',ui.clearInterfaceHTML)
         bill.addEventListener('input',validateInputData)
         numPerson.addEventListener('input',validateInputData)
     }

@@ -7,7 +7,12 @@ class Propina{
     }
 
     calculateAdditionalTip(){
-        let tipToPay = (this.bill / this.numberPeople) * (this.tip / 100) 
-        return tipToPay;
+        return (this.bill / this.numberPeople) * (this.tip / 100) 
+    }
+
+    calculateTotalToPay(){
+        return (this.bill / this.numberPeople) + this.calculateAdditionalTip()
     }
 }
+
+export default Propina;

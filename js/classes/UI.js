@@ -1,4 +1,5 @@
-
+import { buttons,custom,tipAmount,total,bill,numPerson } from "../selectores.js";
+import { calcularPropina,propina, ui } from "../funciones.js";
 class UI{
     constructor(){
 
@@ -20,6 +21,40 @@ class UI{
         }
     }
 
+    unlockInputButtons(estado){
+        if(estado){
+            buttons.forEach(button=>{
+                button.removeAttribute('disabled');
+                button.classList.add('active')
+                button.addEventListener('click',calcularPropina)
+            })
+            custom.removeAttribute('disabled');
+            custom.classList.add('active')
+            custom.addEventListener('input',calcularPropina)
+
+        }else{
+            buttons.forEach(button=>{
+                button.disabled = true
+                button.classList.remove('active')
+            })
+            custom.disabled = true
+            custom.classList.remove('active')   
+        }
+    }
+
+    displayData(){
+        tipAmount.textContent = `$${propina.calculateAdditionalTip().toFixed(2)}`
+        total.textContent = `$${propina.calculateTotalToPay().toFixed(2)}`
+    }
+
+    clearInterfaceHTML(){
+        bill.value = ''
+        custom.value = ''
+        numPerson.value = ''
+        tipAmount.textContent = '$0'
+        total.textContent = '$0'
+        ui.unlockInputButtons(false)
+    }
 }
 
 export default UI;
