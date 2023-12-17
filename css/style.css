@@ -114,6 +114,9 @@ body {
   font-weight: 900;
   font-size: 1.5rem;
 }
+.conteiner .card-Calculator .seccion-Data-Input .conteiner-Select-Tip .conteiner-tip .button-select {
+  background-color: #1eb19d;
+}
 .conteiner .card-Calculator .seccion-Data-Input .conteiner-Select-Tip .conteiner-tip #Custom {
   height: 4.1rem;
   font-size: 1.5rem;

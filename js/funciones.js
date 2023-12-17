@@ -1,10 +1,11 @@
 import UI from "./classes/UI.js";
-import { bill,numPerson } from "./selectores.js";
+import { bill,numPerson,custom } from "./selectores.js";
 import Propina from "./classes/propinas.js";
 
 export const ui = new UI()
 export let propina
 let tip
+let button
 // let billValue,numPersonValue;
 
 export function validateInputData(e){
@@ -44,6 +45,20 @@ export function validateInputData(e){
 export function calcularPropina(e){
     e.preventDefault()
     tip = parseInt(e.target.value);
+
+    // if a button already exists remove the class button select
+    if(button && button.classList.contains('button-tip')){
+        button.classList.toggle('button-select')
+    }
+
+    // here store the value button
+    button = e.target 
+    // if exists a button with the class button-tip add the class button-select 
+    if(button.classList.contains('button-tip')){
+        button.classList.toggle('button-select')
+        custom.value = ''
+    }
+
     if(isNaN(tip) || e.target.value.trim() === ''){
         e.target.style.backgroundColor = 'hsl(0, 83%, 86%)'
         return
